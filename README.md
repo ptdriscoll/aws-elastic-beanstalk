@@ -14,11 +14,11 @@ git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
 ```
 
-2. Ensure `eb` is in PATH, and then check:
+2. Ensure `eb` is in PATH:
 
 ```
 echo 'export PATH="/home/ec2-user/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile
-eb --help
+eb --version
 ```
 
 3. Clone this GitHub repo, and cd into the directory:
