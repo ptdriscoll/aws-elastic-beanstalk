@@ -1,4 +1,4 @@
+awsebcli
+flask
 pylint
 pytest
-#awsebcli
-flask
