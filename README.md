@@ -51,10 +51,9 @@ make all
 7. Initialize eb app:
 
 ```
-eb init -p python-3.8 flask-continuous-delivery
+eb init -p python-3.7 flask-continuous-delivery
 ```
-
-As an option, to create SSH keys, run `eb init` again.
+    - As an option, to create SSH keys, run `eb init` again.
 
 8. Create an environment and deploy:
 
