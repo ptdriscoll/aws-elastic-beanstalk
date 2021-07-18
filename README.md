@@ -66,6 +66,7 @@ make all
 ```
 eb init -p python-3.7 flask-continuous-delivery
 ```
+
     - As an option, to create SSH keys, run `eb init` again.
 
 9. Create an environment and deploy:
