@@ -42,10 +42,10 @@ cd aws-elastic-beanstalk
 5. Create and source the Python virtual environment:
 
 ```
-python3 -m venv ~/.venv
+python3 -m venv ~/.aws-elastic-beanstalk
 ```
 ```
-source ~/.venv/bin/activate
+source ~/.aws-elastic-beanstalk/bin/activate
 ```
 
 6. Install packages:
