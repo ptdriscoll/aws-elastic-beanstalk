@@ -7,10 +7,14 @@ A continuous delivery pipeline to auto-deploy a Flask web application on AWS Ela
 
 ```
 sudo yum groupinstall -y "Development Tools"
+```
+```
 sudo yum install -y zlib-devel openssl-devel ncurses-devel libffi-devel sqlite-devel.x86_64 readline-devel.x86_64 bzip2-devel.x86_64
 ```
 ```
 git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
+```
+```
 ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
 ```
 
@@ -18,6 +22,8 @@ git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 
 ```
 echo 'export PATH="/home/ec2-user/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile
+```
+```
 eb --version
 ```
 
@@ -25,6 +31,8 @@ eb --version
 
 ```
 git clone https://github.com/ptdriscoll/aws-elastic-beanstalk.git
+```
+```
 cd aws-elastic-beanstalk
 ```
 
@@ -32,6 +40,8 @@ cd aws-elastic-beanstalk
 
 ```
 python3 -m venv ~/.venv
+```
+```
 source ~/.venv/bin/activate
 ```
 
