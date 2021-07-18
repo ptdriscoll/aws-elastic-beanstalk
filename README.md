@@ -75,7 +75,9 @@ eb init -p python-3.7 flask-continuous-delivery
 eb create flask-continuous-delivery-env
 ```
 
-11. To terminate environment, and all related AWS resources:
+11. Go to [Elastic Beanstalk](https://us-west-2.console.aws.amazon.com/elasticbeanstalk/) page to view status and get URL.
+
+12. To terminate environment, and all related AWS resources:
 
 ```
 eb terminate flask-continuous-delivery-env
