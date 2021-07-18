@@ -56,10 +56,10 @@ make all
 
 7. If you have never set up an Elastic Beanstalk app in your AWS account:
     - Some IAM roles need to be created with the correct permissions
-    - The easiest way to do that is to first create a sample app through the console:
+    - The easiest way to do that is automatically, by creating a sample app through the console:
 	    - [Creating an Elastic Beanstalk environment](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.environments.html)
 		- [Unable to assume role [IAM Role ARM] Verify that the role exists](https://forums.aws.amazon.com/thread.jspa?threadID=213002)
-	- Once created, the roles will be referenced by future Elastic Beanstalk apps		
+	- Once the roles are created, they will be referenced by future Elastic Beanstalk apps		
 
 8. Initialize eb app:
 
