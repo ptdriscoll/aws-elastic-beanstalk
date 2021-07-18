@@ -8,6 +8,8 @@ A continuous delivery pipeline to auto-deploy a Flask web application on AWS Ela
 ```
 sudo yum groupinstall -y "Development Tools"
 sudo yum install -y zlib-devel openssl-devel ncurses-devel libffi-devel sqlite-devel.x86_64 readline-devel.x86_64 bzip2-devel.x86_64
+```
+```
 git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
 ```
@@ -60,13 +62,7 @@ As an option, to create SSH keys, run `eb init` again.
 eb create flask-continuous-delivery-env
 ```
 
-9. Open in browser:
-
-```
-eb open
-```
-
-10. To terminate environment, and all related AWS resources:
+9. To terminate environment, and all related AWS resources:
 
 ```
 eb terminate flask-continuous-delivery-env
