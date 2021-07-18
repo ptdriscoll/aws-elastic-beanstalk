@@ -61,13 +61,13 @@ make all
 		- [Unable to assume role [IAM Role ARM] Verify that the role exists](https://forums.aws.amazon.com/thread.jspa?threadID=213002)
 	- Once created, the roles will be referenced by future Elastic Beanstalk apps		
 
-8. Initialize eb app:
+8a. Initialize eb app:
 
 ```
 eb init -p python-3.7 flask-continuous-delivery
 ```
 
-    - As an option, to create SSH keys, run `eb init` again.
+8b. As an option, to create SSH keys, run `eb init` again.
 
 9. Create an environment and deploy:
 
