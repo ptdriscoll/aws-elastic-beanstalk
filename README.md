@@ -3,7 +3,7 @@ A continuous delivery pipeline to auto-deploy a Flask web application on AWS Ela
 
 <img src="img/Elastic-Beanstalk-PaaS.jpg" width="675">
 
-1. Install EB CLI in an AWS Cloud9 envrionment: 
+1. Install EB CLI dependencies in an AWS Cloud9 envrionment: 
 
 ```
 sudo yum groupinstall -y "Development Tools"
@@ -11,6 +11,9 @@ sudo yum groupinstall -y "Development Tools"
 ```
 sudo yum install -y zlib-devel openssl-devel ncurses-devel libffi-devel sqlite-devel.x86_64 readline-devel.x86_64 bzip2-devel.x86_64
 ```
+
+2. Install EB CLI:
+
 ```
 git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 ```
@@ -18,7 +21,7 @@ git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
 ```
 
-2. Ensure `eb` is in PATH:
+3. Ensure `eb` is in PATH:
 
 ```
 echo 'export PATH="/home/ec2-user/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile
@@ -27,7 +30,7 @@ echo 'export PATH="/home/ec2-user/.ebcli-virtual-env/executables:$PATH"' >> ~/.b
 eb --version
 ```
 
-3. Clone this GitHub repo, and cd into the directory:
+4. Clone this GitHub repo, and cd into the directory:
 
 ```
 git clone https://github.com/ptdriscoll/aws-elastic-beanstalk.git
@@ -36,7 +39,7 @@ git clone https://github.com/ptdriscoll/aws-elastic-beanstalk.git
 cd aws-elastic-beanstalk
 ```
 
-4. Create and source the Python virtual environment:
+5. Create and source the Python virtual environment:
 
 ```
 python3 -m venv ~/.venv
@@ -45,33 +48,33 @@ python3 -m venv ~/.venv
 source ~/.venv/bin/activate
 ```
 
-5. Install packages:
+6. Install packages:
 
 ```
 make all
 ```
 
-6. If you have never set up an Elastic Beanstalk app in your AWS account:
+7. If you have never set up an Elastic Beanstalk app in your AWS account:
     - Some IAM roles need to be created with the correct permissions
     - The easiest way to do that is to first create a sample app through the console:
 	    - [Creating an Elastic Beanstalk environment](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.environments.html)
 		- [Unable to assume role [IAM Role ARM] Verify that the role exists](https://forums.aws.amazon.com/thread.jspa?threadID=213002)
 	- Once created, the roles will be referenced by future Elastic Beanstalk apps		
 
-7. Initialize eb app:
+8. Initialize eb app:
 
 ```
 eb init -p python-3.7 flask-continuous-delivery
 ```
     - As an option, to create SSH keys, run `eb init` again.
 
-8. Create an environment and deploy:
+9. Create an environment and deploy:
 
 ```
 eb create flask-continuous-delivery-env
 ```
 
-9. To terminate environment, and all related AWS resources:
+10. To terminate environment, and all related AWS resources:
 
 ```
 eb terminate flask-continuous-delivery-env
