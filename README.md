@@ -64,7 +64,7 @@ make all
 8. Initialize eb app:
 
 ```
-eb init -p python-3.7 flask-continuous-delivery
+eb init -p python-3.7 flask-auto-deploy
 ```
 
 9. As an option, to create SSH keys, run `eb init` again.
@@ -72,7 +72,7 @@ eb init -p python-3.7 flask-continuous-delivery
 10. Create an environment and deploy:
 
 ```
-eb create flask-continuous-delivery-env
+eb create flask-auto-deploy-env
 ```
 
 11. Go to [Elastic Beanstalk page](https://us-west-2.console.aws.amazon.com/elasticbeanstalk/) to view status and get URL.
@@ -80,7 +80,7 @@ eb create flask-continuous-delivery-env
 12. To terminate environment, and all related AWS resources:
 
 ```
-eb terminate flask-continuous-delivery-env
+eb terminate flask-auto-deploy-env
 ```
 
 ### Video tutorial
