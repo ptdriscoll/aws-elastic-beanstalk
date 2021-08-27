@@ -79,7 +79,7 @@ eb create flask-auto-deploy-env
 
 12. Optionally, set up [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html#concepts-how-it-works) using a buildspec file in a YAML format. A sample [buildspec.yml](/buildspec.yml) file, using these [specs](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html), is included in this repository. To see an example of how CodeBuild can be set up, see step 13 in this [project](https://github.com/ptdriscoll/aws-s3).  
 
-13. To terminate environment, and all related AWS resources:
+13. To terminate the environment, and all related AWS resources:
 
 ```
 eb terminate flask-auto-deploy-env
