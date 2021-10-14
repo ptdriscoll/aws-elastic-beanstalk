@@ -77,7 +77,7 @@ eb create flask-auto-deploy-env
 
 11. Go to [Elastic Beanstalk page](https://us-west-2.console.aws.amazon.com/elasticbeanstalk/) to view status and get URL.
 
-12. Optionally, set up [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html#concepts-how-it-works) using a buildspec file in a YAML format. A sample [buildspec.yml](/buildspec.yml) file, using these [specs](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html), is included in this repository. To see an example of how CodeBuild can be set up, see step 13 in this [project](https://github.com/ptdriscoll/aws-s3).  
+12. Optionally, set up [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html#concepts-how-it-works) using a buildspec file in a YAML format. A sample [buildspec.yml](/buildspec.yml) file, using these [specs](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html), is included in this repository. To see an example of how CodeBuild can be set up, see step 14 in this [project](https://github.com/ptdriscoll/aws-s3).  
 
 13. To terminate the environment, and all related AWS resources:
 
