@@ -11,6 +11,7 @@ lint:
 
 deploy:
 	echo "Deploying app"
-	eb deploy hello-env
+	eb init -r $(US East (Ohio)us-east-2) -p python-3.7 flask-codebuild
+	eb deploy flask-codebuild
 
 all: install lint test 
