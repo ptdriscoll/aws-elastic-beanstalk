@@ -10,7 +10,7 @@ lint:
 	pylint --disable=R,C application.py
 
 deploy:
-	eb init
+	eb init hello-env
 	echo "Deploying app"
 	eb deploy hello-env
 
