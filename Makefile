@@ -11,7 +11,7 @@ lint:
 
 deploy:
 	echo "Deploying app"
-	eb init python-3.7 flask-auto-deploy-env
+	eb init flask-auto-deploy-env
 	eb deploy flask-auto-deploy-env
 
 all: install lint test 
