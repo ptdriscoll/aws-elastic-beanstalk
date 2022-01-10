@@ -82,7 +82,7 @@ eb init -p python-3.7 flask-auto-deploy
 eb create flask-auto-deploy-env
 ```
 
-11. Go to [Elastic Beanstalk page](https://us-west-2.console.aws.amazon.com/elasticbeanstalk/) to view status and get URL.
+11. Go to [Elastic Beanstalk page](https://us-east-2.console.aws.amazon.com/elasticbeanstalk/) (region us-east-2 link) to view status and get URL.
 
 12. Append "echo" and some value to url to see app output:
 
