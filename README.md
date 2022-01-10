@@ -8,6 +8,8 @@ NOTE: The Makefile deploy command sets up the app in AWS region us-east-2, which
 eb init -r us-east-2 -p python-3.7 flask-auto-deploy
 ```
 
+### Steps
+
 1. Install EB CLI dependencies in an AWS Cloud9 envrionment: 
 
 ```
