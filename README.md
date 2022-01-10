@@ -3,6 +3,11 @@ A pipeline to auto-deploy a Flask web application on AWS Elastic Beanstalk.
 
 <img src="img/Elastic-Beanstalk-PaaS.jpg" width="675">
 
+NOTE: Befoe setting anything up in AWS, know that the Makefile deploy command sets up the app in region us-east-2, which can be changed in this line:
+```
+eb init -r us-east-2 -p python-3.7 flask-auto-deploy
+```
+
 1. Install EB CLI dependencies in an AWS Cloud9 envrionment: 
 
 ```
