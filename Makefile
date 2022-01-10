@@ -4,7 +4,7 @@ install:
 
 test:
 	#python -m pytest -vv application_test.py
-	python main_test.py
+	python application_test.py
 
 lint:
 	pylint --disable=R,C application.py
